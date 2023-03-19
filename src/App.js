@@ -14,7 +14,9 @@ function App() {
 
   const fetchClockHandler = async () => {
     try {
-      const response = await fetch("http://worldtimeapi.org/api/ip");
+      const response = await fetch("http://worldtimeapi.org/api/ip", {
+        referrerPolicy: "unsafe-url",
+      });
       if (!response.ok) {
         throw new Error("Something went wrong!");
       }
