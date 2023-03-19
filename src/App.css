@@ -1,0 +1,36 @@
+main {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.3)),
+    url("./assets/desktop/bg-image-daytime.jpg");
+
+  font-family: "Inter", sans-serif;
+}
+
+.dark-mode {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.3)),
+    url("./assets/desktop/bg-image-nighttime.jpg");
+}
+
+@media (max-width: 1024px) {
+  main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.3)),
+      url("./assets/tablet/bg-image-daytime.jpg");
+  }
+  .dark-mode {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.3)),
+      url("./assets/tablet/bg-image-nighttime.jpg");
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.3)),
+      url("./assets/mobile/bg-image-daytime.jpg");
+  }
+  .dark-mode {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.3)),
+      url("./assets/mobile/bg-image-nighttime.jpg");
+  }
+}
